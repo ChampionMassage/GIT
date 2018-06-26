@@ -7,6 +7,7 @@ let coins = require("./coins.json");
 let xp = require("./xp.json");
 let purple = botconfig.purple;
 
+
 fs.readdir("./commands/", (err, files) => {
 
   if(err) console.log(err);
@@ -22,8 +23,6 @@ fs.readdir("./commands/", (err, files) => {
       console.log(`${f} loaded!`);
       bot.commands.set(props.help.name, props);
   });
-
-
 
 
 });
